@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<!-- update as of 10/15/2023 2:01pm -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Homepage</title>
+  <link href="HomePage.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+  <!-- Included axios for making requests to backend server-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="nav">
+      <div class="containerbar" >
+        <h1 class="logo" >
+          <img src = "Logo.png" alt = "logo" width = "60px">
+          <a href="HomePage.html">WallStreetWizards</a></h1>
+        <ul>
+          <li><a href="HomePage.html" class="current">Portfolio</a></li>
+          <li><a href="buy.html">Buy</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="index.html">Log Out</a></li>
+        </ul>
+       
+      </div>
+
+    </nav>
+
+    <div class="hero">
+     
+      <div class="container">
+        <div class="column">
+        <h1 id="homeH">Welcome To WallStreetWizards</h1>
+        <p id="homeP">Our Mission:
+          We aim toncial markets with confidence and intelligence.</p>
+      </div>
+      </div>
+      <div class="lottie-container"></div>
+    </div>
+
+   
+    <div class="twoChart">
+      <div class="chart-container">
+        <canvas id="stockChart1"></canvas>
+       
+        <div class="chart-overlay"></div>
+   
+        </div>
+
+         <!-- Add the gradient overlay -->
+         
+         <div class="chart-container chart-container2">
+      
+          <canvas id="stockChart2"></canvas>
+          <div class="chart-overlay"></div>
+         </div>
+
+           <section class="container content">
+
+          </section> 
+    </div>
+
+   
+
+       <!-- Add the gradient overlay -->
+  </div>
+
+    </div>
+       <!-- Add the gradient overlay -->
+  
+  </div>
+
+
+  <div id="test" class="infoBar">
+    <table width="100%">
+      <tr class="topBar">
+        <th colspan="2">Total value</th>
+        <th colspan="2">Today</th>
+        <th colspan="2">Buying power</th>
+      </tr>
+      <tr class="topBar">
+        <td colspan="2" id = "totalValue" >$1</th>
+        <td colspan="2" id="currentDate">[data]</th>
+        <td colspan="2" id = "dollarAmount">[data]</th>
+      </tr>
+    </table>
+  </div>
+
+  <div width="100%" class="portfolio">
+    <div class="stockList">
+      <table width="100%" class="stocks" id = "stockList">
+
+        <tr>
+          <th>Stocks</th>
+          <th>Current Price</th>
+          <th>Shares</th>
+          <th>Total Value</th>
+          <th>Sell Button</th>
+        </tr>
+
+      <tbody id="scrolling-container">
+          <!-- User stock information generated will be placed here -->
+      </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <script type = "module" src="HomePage.js"></script>
+
+</body>
+
+</html>

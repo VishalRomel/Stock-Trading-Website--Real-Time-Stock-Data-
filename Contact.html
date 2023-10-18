@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="Contact.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="containerbar">
+      <h1 class="logo">
+        <img src = "Logo.png" alt = "logo" width = "60px">
+        <a href="HomePage.html">WallStreetWizards</a></h1>
+      <ul>
+        <li><a href="HomePage.html">Portfolio</a></li>
+        <li><a href="buy.html">Buy</a></li>
+        <li><a href="Contact.html" class="current">Contact</a></li>
+        <li><a href="index.html">Log Out</a></li>
+      </ul>
+     
+    </div>
+    <script>
+      //Sticky nav bar
+      const nav = document.querySelector('.nav')
+      window.addEventListener('scroll', fixNav)
+
+      function fixNav() {
+          if(window.scrollY > nav.offsetHeight) {
+              nav.classList.add('active')
+          } else {
+              nav.classList.remove('active')
+          }
+      }
+    </script>
+
+  </nav>
+
+
+  <div class="hero">
+    <link href="HomePage.css" rel="stylesheet" type="text/css" />
+
+    <div class="column">
+    <div class="container">
+      <h1>Have Questions? Contact Us</h1>
+      <p>Below, you'll find contact links for the creators of this company website. 
+        Recruiters and users are welcome to reach out to us with any questions, feedback, or assistance you may need. 
+        We are here to provide support and address any inquiries you might have. Your feedback is valuable to us, 
+        and we eagerly anticipate hearing from you..</p>
+    </div>
+    </div>
+    <div class="lottie-container"></div>
+  </div>
+
+
+    <!-- faq boxes-->
+<div class = "portfolio">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-container">
+      <div class="faq active">
+        <h3 class="faq-title">
+          Who created this amazing website?
+        </h3>
+  
+        <p class="faq-text">
+          
+            Ankit Kumar<br>
+            Daniel Pinhasov<br>
+            Hang Biao Li<br>
+            Moshe Shtaygrud<br>
+            <a href ="https://www.linkedin.com/in/vishal-charran-36b1221bb/"><span style = "font-weight: bold; color: rgb(12, 235, 12)">Vishal Romel Charran</span></a>
+            
+        </p>
+  
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+  
+      <div class="faq">
+        <h3 class="faq-title">
+         What's your linkedin?
+        </h3>
+        <p class="faq-text">
+          <a href = "https://www.linkedin.com/in/mosheshtaygrudautomation/">Moshe</a> <br>
+          <a href ="https://www.linkedin.com/in/kumarankit512/">Ankit</a><br>
+          <a href ="https://www.linkedin.com/in/vishal-charran-36b1221bb/">Romel</a><br>
+          <a href ="https://www.linkedin.com/in/daniel-pinhasov-a55051213/">Daniel</a><br>
+          <a href ="https://www.linkedin.com/in/hang-biao-li-633156241/">Hang</a><br>
+          
+
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+  
+      <div class="faq">
+        <h3 class="faq-title">
+          What are your hobbies?
+        </h3>
+        <p class="faq-text">
+          Coding and Soccer
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+  
+      <div class="faq">
+        <h3 class="faq-title">
+          When will you implement buying more stocks?
+        </h3>
+        <p class="faq-text">
+          Very soon! Stay tuned.
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+  
+      <div class="faq">
+        <h3 class="faq-title">
+          What is: 1 + 1?
+        </h3>
+        <p class="faq-text">
+          Depends if it's string or integer
+        </p>
+        <button class="faq-toggle">
+          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+
+  
+    <script src="concept.js" type="module"></script>
+
+</body>
+</html>
