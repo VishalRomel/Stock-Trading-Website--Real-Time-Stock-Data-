@@ -10,4 +10,56 @@ Pasword: 123456
 
 Link to Website: https://vishalromel.github.io/Stock-Trading-Website--Real-Time-Stock-Data-/
 
-Dynamic trading website on GitHub that provides users with a virtual capital of one million dollars to engage in the exciting world of stock trading. Users can buy and sell stocks, and they have access to real-time stock data and values, which are displayed using interactive line graphs for easy comparison. To achieve this, the website pulls data from a live API, ensuring that users are always working with up-to-date market information. The back end of the website is powered by Firebase, which securely stores user login information, tracks their portfolios of purchased stocks, and calculates their total assets. This project offers a practical and engaging way for individuals to explore the stock market and refine their trading skills.
+## Overview
+This project is a dynamic trading website that allows users to engage in stock trading with virtual capital. Users can buy and sell stocks, view real-time stock data, and analyze their investments using interactive line graphs.
+
+## Features
+- **Virtual Capital**: Users start with $1,000,000 in virtual money.
+- **Real-Time Data**: Access up-to-date stock prices via a live API.
+- **User Accounts**: Secure login and portfolio tracking using Firebase.
+- **Interactive Graphs**: Visualize stock performance and compare different stocks.
+
+## Technologies
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Firebase
+- **APIs**: Live stock data API
+
+## Getting Started
+### Prerequisites
+- Node.js and npm installed on your machine.
+
+### Installation
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/VishalRomel/Stock-Trading-Website--Real-Time-Stock-Data-
+    ```
+2. **Navigate to the project directory**:
+    ```bash
+    cd Stock-Trading-Website--Real-Time-Stock-Data-
+    ```
+3. **Install dependencies**:
+    ```bash
+    npm install
+    ```
+4. **Set up Firebase**:
+    - Create a Firebase project.
+    - Set up Authentication and Firestore Database.
+    - Replace Firebase config in the project with your own config.
+
+5. **Run the project**:
+    ```bash
+    npm start
+    ```
+6. **Open `index.html` in your browser** to start using the website.
+
+## Usage
+- **Login**: Use the provided credentials or create a new account.
+- **Trade Stocks**: Buy and sell stocks using virtual money.
+- **Track Performance**: Monitor your portfolio and analyze stock data.
+
+## Contributing
+Contributions are welcome. Please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License.
+
